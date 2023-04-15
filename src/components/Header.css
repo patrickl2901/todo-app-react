@@ -1,0 +1,58 @@
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+#header .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 90vw;
+  max-width: 600px;
+  padding: 2rem 0;
+  color: #FFF;
+}
+
+#header .title h1 {
+  font-size: 1.75rem;
+  letter-spacing: 0.5rem;
+}
+
+#header img {
+  position: absolute;
+  width: 100%;
+}
+
+.header-bg-desktop {
+  display: none;
+}
+
+#header button {
+  background: transparent;
+  border: 0;
+}
+
+#header button:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+
+  .header-bg-desktop {
+    display: block;
+  }
+
+  .header-bg-mobile {
+    display: none;
+  }
+
+  #header .title {
+    margin-top: 3rem;
+  }
+
+  #header .title h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.75rem;
+  }
+}

@@ -1,0 +1,44 @@
+.TodoUIFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 2.5rem;
+  width: 90vw;
+  max-width: 600px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.TodoUIFooter p {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+.TodoUIFooter button {
+  margin-right: 1rem;
+  background: transparent;
+  border: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 0.9rem;
+}
+
+.TodoUIFooter button:hover {
+  cursor: pointer;
+}
+
+.filter-btns {
+  margin-left: 2rem;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .filter-btns {
+    display: flex;
+  }
+
+  .TodoUIFooter {
+    min-height: 3rem;
+  }
+}
