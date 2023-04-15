@@ -32,7 +32,7 @@ function Header() {
       <div className="title-container">
         <div className="title">
           <h1>TODO</h1>
-          <button onClick={handleToggleTheme}>
+          <button onClick={handleToggleTheme} aria-label="Toggle Theme">
             {theme === "dark" ? <SunIcon /> : <MoonIcon />}
           </button>
         </div>

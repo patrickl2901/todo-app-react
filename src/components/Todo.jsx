@@ -61,6 +61,7 @@ function Todo(props) {
         <button
           className="check-btn"
           onClick={props.completeTodo}
+          aria-label="Check"
           style={
             props.completed === true ? checkBtnStyleCompleted : checkBtnStyle
           }
@@ -73,7 +74,11 @@ function Todo(props) {
           </p>
         </div>
       </div>
-      <button className="delete-btn" onClick={props.deleteTodo}>
+      <button
+        className="delete-btn"
+        onClick={props.deleteTodo}
+        aria-label="Delete"
+      >
         <CrossIcon />
       </button>
     </div>

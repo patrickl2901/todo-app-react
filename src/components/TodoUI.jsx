@@ -188,6 +188,7 @@ function TodoUI() {
             className="check-btn"
             type="submit"
             value=""
+            aria-label="Submit"
             style={themeStyle}
           />
           <input
@@ -242,6 +243,7 @@ function TodoUI() {
           onMouseEnter={handleAllMouseEnter}
           onMouseLeave={handleAllMouseLeave}
           onClick={toggleFilter}
+          aria-label="All"
         >
           All
         </button>
@@ -254,6 +256,7 @@ function TodoUI() {
           onMouseEnter={handleActiveMouseEnter}
           onMouseLeave={handleActiveMouseLeave}
           onClick={toggleFilter}
+          aria-label="Active"
         >
           Active
         </button>
@@ -266,6 +269,7 @@ function TodoUI() {
           onMouseEnter={handleCompletedMouseEnter}
           onMouseLeave={handleCompletedMouseLeave}
           onClick={toggleFilter}
+          aria-label="Completed"
         >
           Completed
         </button>
